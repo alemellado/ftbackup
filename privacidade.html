@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FTBACKUP - Política de Privacidade</title>
+<style>
+  :root { --fundo:#f6f7f9; --texto:#1d2330; --suave:#5a6273; --destaque:#1f5fbf; --cartao:#ffffff; --borda:#dde1e8; }
+  @media (prefers-color-scheme: dark) { :root { --fundo:#14171c; --texto:#e6e9ef; --suave:#a3abba; --destaque:#7fb0ff; --cartao:#1c2027; --borda:#2c323c; } }
+  body { margin:0; background:var(--fundo); color:var(--texto); font:16px/1.6 "Segoe UI", system-ui, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 60px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  .sub { color:var(--suave); margin:0 0 24px; }
+  h2 { font-size:1.1rem; margin:28px 0 6px; }
+  a { color:var(--destaque); }
+  ul { padding-left:20px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade — FTBACKUP</h1>
+  <p class="sub">Vigente desde 9 de novembro de 2026 · <a href="index.html">Página inicial</a></p>
+
+  <p>O FTBACKUP é um programa de backup para Windows desenvolvido por Alexandre Mellado
+  (<a href="mailto:alepmsistemas@gmail.com">alepmsistemas@gmail.com</a>) e instalado nos computadores dos clientes
+  que ele atende. Esta política explica quais dados o programa usa e o que faz com eles.</p>
+
+  <h2>1. Dados do Google acessados</h2>
+  <p>Quando o envio ao Google Drive é ativado, o programa pede uma única permissão:
+  <code>https://www.googleapis.com/auth/drive.file</code>. Com ela, o FTBACKUP só consegue ver, criar e excluir
+  os arquivos e pastas que ele mesmo criou no Google Drive. Ele <strong>não</strong> tem acesso a nenhum outro
+  arquivo do Drive, ao e-mail, aos contatos ou a qualquer outro dado da conta Google.</p>
+
+  <h2>2. Como os dados são usados</h2>
+  <ul>
+    <li>Enviar os arquivos de backup para uma pasta criada pelo próprio programa.</li>
+    <li>Listar e excluir os backups antigos dessa pasta, conforme a quantidade a guardar configurada.</li>
+    <li>Baixar um backup, quando for necessário restaurar os dados.</li>
+  </ul>
+  <p>Os backups são compactados e criptografados com AES-256 no computador, antes do envio. A chave que abre os
+  backups não fica no computador do cliente nem com o Google.</p>
+
+  <h2>3. Armazenamento e compartilhamento</h2>
+  <p>O FTBACKUP não tem servidor próprio e não envia dados a terceiros. Os backups ficam somente na conta Google
+  autorizada. A autorização (token de acesso) fica gravada no computador onde o programa está instalado, protegida
+  pela criptografia do Windows (DPAPI). Nenhum dado é vendido, usado para publicidade ou para treinar modelos de
+  inteligência artificial.</p>
+
+  <h2>4. Uso limitado</h2>
+  <p>O uso e a transferência de informações recebidas das APIs do Google seguem a
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de dados do usuário dos
+  serviços de API do Google</a>, incluindo os requisitos de uso limitado.</p>
+
+  <h2>5. Como revogar o acesso</h2>
+  <p>A permissão pode ser retirada a qualquer momento em
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, removendo o
+  “FTBACKUP”. A partir daí o programa deixa de enviar backups ao Drive. Os arquivos já enviados continuam na conta
+  e podem ser apagados pelo próprio Google Drive.</p>
+
+  <h2>6. Contato</h2>
+  <p>Dúvidas sobre esta política: <a href="mailto:alepmsistemas@gmail.com">alepmsistemas@gmail.com</a>.</p>
+</main>
+</body>
+</html>
